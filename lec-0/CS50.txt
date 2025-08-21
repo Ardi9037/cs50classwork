@@ -1,0 +1,5 @@
+-base-1 (unary)
+-base-2 (binary digit - bit)
+*transistor
+-3 binary lights represents 7 decimal numbers (2 power 3, 3 being here "how many binary number is given")
+
