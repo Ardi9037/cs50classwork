@@ -1,0 +1,42 @@
+lecture 01:
+- how to solve problems with functions, variables, conditionals, loops
+- how (not) to solve problems
+- Source code --converter (compiler)--> Machine Code
+
+visual studio on cloud:
+- GUI (Graphical Line Interface), CLI (Command Line Interface)
+
+C :
+- line based
+- code hello.c (filename.c) - to create the c file
+- make hello (make filename) - to compile the file from source code to machine code
+- ./hello - to get the output of the written code
+- from scratch to c. how is the functions, arguments, side effects or outputs in c depending in what I learned on scratch
+- escape sequences
+> \n - end of line
+(to print \n, put another \ like \\n)
+> printf is living in the file called stdio.h
+stdio.h will teach the compiler how print things to the screen.
+- #inlcude tell the compiler to find the file called standardio.h and kinda copy paste it there, so the compiler know about printf and all the functions stored in stdio.h
+- stdio.h is called a header file and it represents a library
+- header file: file ending with .h
+- library: a code that someone else wrote that I can use
+ALL ABOUT LIBRARY - manual.cs50.io
+
+- cs50.h library:
+int → whole numbers
+float → decimal numbers (less precision)
+double → decimal numbers (more precision)
+char → single character
+long → bigger integer
+string (char array) → text/word
+
+- most used format specifier in c:
+%d or %i - Integer (int)
+%f - Float (decimal)
+%lf - Double
+%c - Character (char)
+%ld - Long integer (long)
+%s - String (char[])
+
+- 
