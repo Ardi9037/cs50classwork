@@ -1,5 +1,71 @@
--base-1 (unary)
--base-2 (binary digit - bit)
-*transistor
--3 binary lights represents 7 decimal numbers (2 power 3, 3 being here "how many binary number is given")
+20/08/2025
+1. c, python, SQL, JavaScript
+2. How to represent all of todays media & multi-media (photos, videos, audios, letters, numbers)
+3. how to write Algorithm
+4. solve problems, computational thinking
 
+binary, binary, bit (binary digits), dec, byte (8 bit), assign every letter a number, ASCII code, we can represents 256 (0-255) letters in alphabets with 8 bits
+for ex (ASCII - 8 bit):
+01001000 - H (72)
+01001001 - I (73)
+00100001 - ! (33)
+
+UNICODE (16 bit):
+- but sometimes uses 24 or 32 bits per character
+- base 16
+- Unicode code point (U+.....) (color light to dark or vise versa)
+- different emoji (connects different emoji) made with multiple nicode code point
+- zero width joiners connects
+
+21/08/2025
+Colors:
+- 3 numbers (R G B Represent) are associated in every single pixel
+
+Representation:
+- each dots or each pixel is storing 24 bits or 3 bytes
+- represent music, videos (motion pic) using numbers zeros and ones
+
+Algorithm: (code)
+- make the problem shorter and shorter to get to the solution. (10)
+- when I have a lot of data to deal with then I need to make algorithm ever more efficient so that when more data is added to the problem, it's just one more step in the algorithm
+
+Pseudocode:
+- precise steps
+- functions (what to do), conditional (shows path to do functions), Boolean expressions (question with a yes or no answer 1 or 0), loop (cycle, doing something again and again)
+
+Ai:
+- LLMs (large language models):
+Probable, statistics answers based on patters online. for example, if I say How're you to someone, odds are 90% are gonna say good thanks, how're you?
+
+Scratch:
+- https://scratch.mit.edu/projects/editor/?tutorial=getStarted
+- functions -- perimeters/arguments (customizes/modifies the default behavior of a function)
+
+[example: say - function, hello, world - perimeters/arguments]
+
+- input(hello, world - perimeters/arguments)->[algorithm(say - function)]->output(the visual cat effect)
+
+- a return value (answer)
+- details in scratch00 ss
+
+Abstraction:
+- simplify, no need to care about underline implementation details, just focus on what it does or what's it called
+
+for example: https://scratch.mit.edu, in this website MIT took care of the abstraction, the user don't need to know how to make the sound meow for instance, just have to care about how to put it in use and what it does
+
+(details in abstraction00 ss)
+
+Conditionals:
+- careful about logical bug
+
+what to do next:
+- revise todays class notes
+- See inside of scratch mit web's games and try to understand, then try to make one myself.
+
+22/08/2025
+- practicing scratch web's game inside (trash - trash can open and close when touching mouse pointer, controlling with arrow and hitting the wall)
+
+- My scratch practice link:
+1. https://scratch.mit.edu/projects/1208551256
+controlling the ball with keyboard arrow keys, the bug going left to right, and the bird following the ball wherever it goes
+2. https://scratch.mit.edu/projects/1208603802
