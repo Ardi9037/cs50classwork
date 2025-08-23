@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://codespaces+curly-happiness-5gq7rpvxpx537gp4/workspaces/111964077"
+		}
+	],
+	"remoteAuthority": "codespaces+curly-happiness-5gq7rpvxpx537gp4",
+	"settings": {
+		"gitdoc.enabled": true
+	}
+}
