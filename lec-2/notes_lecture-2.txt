@@ -1,0 +1,33 @@
+24/08/2025 (Arrays)
+
+>>Function Prototype (Previous class title)
+
+- Cryptography
+- Compiling: make hello (to run the c file) make is running an actual compiler for me.
+clang hello.c
+./a.out (if I type ./hello then it's not gonna work, clang default filename a.out)
+
+- Command Line Argument
+clang -o hello hello.c
+(after typing this we can use ./hello)
+
+- but when I use cs50 library then  need to change the command to this:
+clang -o hello hello.c -lcs50 (//link cs5)
+
+compiling is one of 4 steps in term of turning source code to machine code:
+
+preprocessing: converts all of those #include lines to whatever the underlying prototypes are
+
+compiling: converting c assembly language
+
+assembling: assembly to machine code (that's why clang names is output as a.out [assembler output])
+
+linking: 
+when I run my .c file, I'm really combining 3 files: myfile.c    cs50.c    stdio.c
+clang needs compile these 3 in zeros and ones separately, linking combines them.
+
+- reverse engineering
+- debugging:
+debug50 (cs50's own debugger)
+
+- garbage value: the value of a variable have before I ran it, according to the computer memory
