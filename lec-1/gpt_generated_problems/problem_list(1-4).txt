@@ -1,0 +1,5 @@
+chatgpt:
+https://chatgpt.com/share/68ab5ac3-4948-8006-9299-a062158e6318
+(here all the problems are generated)
+
+I skipped no 5, cause it used arrays, this topic is running on lec-2
