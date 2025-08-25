@@ -31,3 +31,55 @@ clang needs compile these 3 in zeros and ones separately, linking combines them.
 debug50 (cs50's own debugger)
 
 - garbage value: the value of a variable have before I ran it, according to the computer memory
+- rubber duck debugging
+- cs50.ai
+
+25/08/2025
+
+- Memory:
+bool - 1 bytes
+int - 4 bytes
+long - 8 bytes
+float - 4 bytes
+double - 8 bytes
+char - 1 byte
+string - ? bytes (sequence of text, variable number of byte)
+
+How computer is storing info using just these bytes.
+
+- printf("Average: %f\n", (score1 + score2 +score3) / 3.0); here changed the denominator form 3 to 3.0 to get a float value. this is easier than casting
+
+- Arrays: An array is just a collection of variables of the same type, stored next to each other in memory. back to back to back no gaps, left to right, top to bottom
+
+- Global Variable: a variable that's not inside of curly braces and outside of main. Top of the file. a way of sharing a variable across functions. Usually a const variable.
+
+- Strings: Sequence of characters. underneath array of characters. string's byte is n + 1, here the extra byte (\0 (8 zero bits) -called NUL) is to tell the computer where the strings ends.
+H I ! \0
+
+- Different Libraries from cs5 manual
+
+- string.h (practiced strlen)
+- ctype.h (toupper, tolower)
+
+- command-line arguments: clang, cd, rm etc
+
+int main(void) instead this:
+int main(int argc, string argv[])
+
+argc - argument count
+argv - (an array of string) argument vertor (a list of values) - a list of command-line arguments.
+the first word of argv is always the program name, the second word is whatever the human typed.
+
+- ASCII art
+- exist status
+
+- echo $? - what's the recently run program secretly exit with?
+
+- cryptography: ability send info securely
+plaintext ->  [cipher]  -> ciphertext
+key (number)
+
+1. Caesar Cipher - each letter is shifted 3 places forward in the alphabet
+2. ROT13 - each letter is shifted 13 places forward in the alphabet. (ROT26) - same letter
+
+- decryption:
