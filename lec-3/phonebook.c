@@ -15,13 +15,13 @@ int main(void)
     persons people[3];
 
     people[0].name = "ardi";
-    people[0].number = "+880-1919543423";
+    people[0].number = "+880-1711111111";
 
     people[1].name = "arik";
-    people[1].number = "+880-1763593045";
+    people[1].number = "+880-1722222222";
 
     people[2].name = "anisa";
-    people[2].number = "+880-1732750868";
+    people[2].number = "+880-1733333333";
 
     string search = get_string("Name: ");
     for (int i = 0; i < 3; i++)
