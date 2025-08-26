@@ -1,0 +1,47 @@
+26/08/2025
+Algorithms:
+
+- how to think algorithmically
+- Linear Search
+hashing, works on unsorted
+- Binary Search
+dividing in half until solved, only works if sorted.
+
+- Pseudocode (important for problem solving): writing codes in plane English
+
+- running time of Algorithm:
+big O notation: how fast or slow the algorithm's gonna be
+represents: upper bound
+
+O(n²) - quadratic time (nested loops, bad for big inputs)
+O(n log n) - 
+O(n) - linear
+O(log n) - binary
+O(1) - faster (const number of steps)
+
+- Ω (Omega) notation:
+represents lower bound. as few as these steps
+Ω(1) - both linear and binary search
+
+- Θ (theta) notation: when best and worst grow the same
+
+- string.h
+
+- strcmp(strings[i], s) == 0 - ASCIIbetical value:
+0 → if the two strings are equal
+
+negative number → if first string is less than second string (alphabet order)
+
+positive number → if first string is greater than second string
+
+- data structures:
+typedef struct:
+
+typedef: invent the following datatype for me
+at the end of curly brace is the name of the new datatype. more details on phonebook.c file
+
+- sorting
+unsorted ->    -> sorted
+
+selection sort: selecting the smallest element again and again.
+bubble sort: 
