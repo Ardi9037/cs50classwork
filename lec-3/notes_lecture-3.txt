@@ -43,5 +43,74 @@ at the end of curly brace is the name of the new datatype. more details on phone
 - sorting
 unsorted ->    -> sorted
 
-selection sort: selecting the smallest element again and again.
-bubble sort: 
+
+27/08/2025
+
+selection sort:
+
+selecting the smallest element again and again. if the list is already sorted, there's no pseudocode for selection sorting, it's gonna blindly do it's work.
+
+for i from 0 to (n-1) - this loop is telling to do something n times
+    find smallest number between numbers[i] and numbers[n-1] - this line is telling to do something n times as well.
+
+    swap smallest number with number[i]
+that's why running time is n²
+O(n²), Ω(n²)
+
+
+bubble sort:
+
+ompare one pair -> swap them -> then compare the next pair
+
+repeat n times (repeat n-1 times - also correct, the last one endsd up being in place)
+    for i from 0 to n-2 (this inner loop also repeating n-1 time)
+         if numbers[i] and numbers[i+1] out of order
+             swap now
+    if no swaps
+       quit
+
+(n-1) - it's not for this one cause it'll be out of the list, left hand is [i] and right hand is [i+1] that's why n - 2
+
+this also is not taking in account wether or not the list is already sorted.
+running time is n²
+O(n²), Ω(n)
+
+🔹 Selection Sort
+No matter what the input looks like (sorted or unsorted), Selection Sort always searches through the whole list to find the smallest element.
+That means the number of comparisons is always the same.
+
+So:
+
+Worst case (O) = O(n²)
+Best case (Ω) = Ω(n²) ✅
+
+👉 Selection sort never gets lucky — even if the list is already sorted.
+
+🔹 Bubble Sort
+Bubble sort compares neighbors and swaps if needed.
+If the list is already sorted, it can finish in just one pass (because no swaps happen).
+
+So:
+
+Worst case (O) = O(n²) (lots of swaps if it’s reversed)
+Best case (Ω) = Ω(n) ✅
+
+👉 Bubble sort can sometimes be faster than selection sort if the input is already sorted.
+
+but both selection and bubble sorting are pretty slow.
+- recursion: A function that calls itself to solve a problem. makes the steps shorter for faster problem solving.
+
+- Merge sort:
+pseudocode:
+if only one number
+	quit
+else
+	sort the left half
+	sort the right half
+	merge the sorted halves
+
+running time for merge sort: log base 2 n
+O(nlogn), Ω(nlogn), Θ (nlogn)
+
+not as good as linear or binary search but way better than selection and bubble sort.
+
