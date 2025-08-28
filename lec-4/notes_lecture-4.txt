@@ -1,0 +1,36 @@
+28/08/2025 (MEMORY) cs50.ly/art
+- pixel art
+- RGB
+
+- Hexadecimal(base-16): hexadecimal (details image file in this folder)
+.convenient. (cause of 4 bits) (8 bits a byte - FF)
+- 16 digits in alphabet 0 to F, 4 bits of zeroes and ones to represents 16 different values. (2 power 4 = 16)
+
+- Memory
+'&' (ampersand): ask the computer at what address is this variable
+%p (a pointer in C) - format specifier tells printf to print the memory address of n in hexadecimal format.
+&n - gives the address of the variable n, not its value.
+
+pointers in C: a pointer is a variable that stores the memory address of another variable. takes 8 bytes rather than just 4, for storing more address and this way computers can have more memory. (points at the location of the memory we care, cause no one cares about the addresses)
+
+'*' (asterisk): take an address and go to it.
+int *p = &n; - I want p to be a pointer variable that stores an address
+- when I only print p, it shows the address
+- but when I print *p (without specifying a type), it shows who's address it's storing (just go there), meaning go to that address and show me what's inside of the computer's memory there.
+
+- Strings: (reminder: string always contains a null character [\0] - end)
+string s = "hi!" - here s is technically a pointer. that points for the beggining of a string, until found null = char *s (in standard C, string is just an array of characters)
+
+- typedef int integer(name of the struct); give me a datatype of integer that's actually an int
+- typedef uint8_t BYTE; an unsigned integer with 8 bits (datatype)
+- typedef char *string; in cs50.h header file (teaches clang to think of the string as being synonimous with char *)
+
+- pointer arithmetic: 
+s[0] for printing the first character of a string
+*s is doing the same thing
+s[1] for printing the second character of a string
+*(s + 1) is doing the same thing
+
+- String Comparison:
+actually comparing the addresses of the first character.
+that's why we use strcmp to compare them char by char. using ASCIIbetical order.
