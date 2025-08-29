@@ -34,3 +34,75 @@ s[1] for printing the second character of a string
 - String Comparison:
 actually comparing the addresses of the first character.
 that's why we use strcmp to compare them char by char. using ASCIIbetical order.
+
+29/08/2025
+- Copying:
+- malloc
+- free
+- NULL: it's just an address (zero), that can indicate when something has gone wrong, copy.c file in details
+- NUL: meaning string ends here
+
+- malloc and Valgrind:
+
+- Valgrind: Valgrind is like a debugger for your memory. valgrind ./filename.c - only for memory related bug
+- Memory leaks: you allocated memory with malloc but never freed it (free)
+- Invalid reads/writes → you’re accessing memory you don’t own
+- Using uninitialized memory → using variables before assigning them a value
+- Double frees → trying to free memory twice.
+
+- an array is just contiguous memory and malloc returns to me a bunch of contiguous memory (as an array)
+- int *x = malloc(3 * sizeof(int)); -- Reserves enough memory for 3 integers, and x points to that memory
+
+- garbage values:  leftover data (When you declare a variable like int x; but do not assign a value to it, x still contains whatever data was left there from previous programs or operations) is called a garbage value
+
+- Pointers fun with blinky
+int main(void)
+{
+    int *x;
+    int *y;
+
+    x = malloc(sizeof(int));
+    *x = 42;
+
+    y = x;
+    *y = 13;
+}
+(overwriting the same memory)
+(two pointers pointing to the same memory)
+
+- scope:
+- passing by value
+(at the top of computer's memory block goes the machine code (0, 1), below that goes global variables, then heep -->  <-- at the bottom of this is stack)(one can overflow the other)
+
+- when I use malloc, it comes from the heep memory(specifically)
+- when I use functions with variables and arguments, I'm using stack memory
+
+- stack: (when using the swap function)
+
+- Pass by value → copies the value, original unchanged.
+- Pass by reference (via pointers in C) → gives the function access to the original variable. (details in swap.c file)
+
+- overflow:
+Heap = manual, tied to malloc/free
+Stack = automatic, tied to scope
+
+- too much recursion can cause stack overflow
+- heap overflow
+- stack overflow
+- buffer overflow
+
+- scanf:
+- scanf is not good for using in getting user's input as int or as string, cause of it's lack of error handling. (cs50 on the other hand has this ability)
+- segmentation fault
+
+- File I/O: (file input and output)
+fopen → open file
+fclose → close file
+fprintf → write text
+fscanf → read text
+fwrite → write binary data
+fread → read binary data
+fseek → move inside file
+(details in phonebook.c)
+
+- BMP (bitmap file): essentially implements images (.bmp)
