@@ -103,6 +103,6 @@ fscanf → read text
 fwrite → write binary data
 fread → read binary data
 fseek → move inside file
-(details in phonebook.c)
+(details in phonebook.c and cp.c)
 
 - BMP (bitmap file): essentially implements images (.bmp)
