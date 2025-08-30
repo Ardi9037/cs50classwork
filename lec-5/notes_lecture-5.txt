@@ -1,0 +1,40 @@
+30/08/2025
+Data Structure (how to use my computer's memory in a clever ways to solve problem more effectively)
+- abstract data type:
+- queues (FIFO - first in, first out)
+- enqueue: end of list
+- dequeue: first value takes off
+
+- stacks (LIFO - last in, first out)
+- most recent data as output, like gmail
+- push: put values on top of the data stack
+- pop: take the top data off the list
+
+Resizing arrays (stores data contiguously, back to back to back)
+- when we use malloc to reserve enough memory for say 3 int, when we need to put another int in the list c doesn't automatically do that, but resizing this way using malloc is a little complicated (more details in list.c)
+that's where the term data structure comes in.
+- syntax struct: where I can keep different types of data in one place (int, float, char etc.)
+- syntax . (dot operator): whenever I have a struct I can go inside of it using . operator
+- syntax * declaring a pointer and also dereferencing a pointer
+- combining . and * = ->
+
+Linked Lists: 
+- we can certainly use the computer's memory more of a canvas, put things wheverever we want, whereever is availabe, so long as we somehow connect the dot and make our way from one chunk of memory to next to the next (linking them together)
+- Using pointers
+- Node: each node has data, and a pointer (metadata) to tell you where the next node is. You follow the chain of clues until you reach the end (where the pointer is NULL (0 address)
+- *one extra pointer to find the first node*
+- metadata: we don't fundamentally care about it, but it does helps us organize my actual data
+- good template 🔻
+typedef struct node
+{
+	int number;
+	struct node *next;
+} node; (we don't wanna call it struct node every time, that's why line)
+- c woks from top to bottom, so in first line we gave the structure a name called struct node, then we can use tham name in this line to make a pointer for the next node
+- order of operations is super important here.
+- atoi (ASCII to integer): converting string to an int. "10" to 10 (an actual int)
+- prepending
+- running time of insertion (while prepending) is O(1): constant time, superfast
+- running time of searching a linked list(looking for something in it): O(n) takes time
+- we can't use binary search algorithm on linked list
+- running time of insertion (while appending) is O(n): every time finding the end of the list and there's is n number of node
