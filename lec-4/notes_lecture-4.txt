@@ -106,3 +106,19 @@ fseek → move inside file
 (details in phonebook.c and cp.c)
 
 - BMP (bitmap file): essentially implements images (.bmp)
+
+- typedef uint8_t BYTE;
+- unsigned integer of 8 bits (a number between 0–255)
+
+- argc = argument count (how many command-line arguments you typed).
+- argv = argument vector (array of strings typed in the command line).
+
+Example: if you run: ./copyfile input.jpg output.jpg
+- argc = 3
+- argv[0] = "./copyfile" (the program name)
+- argv[1] = "input.jpg" (source file)
+- argv[2] = "output.jpg" (destination file)
+
+- BYTE b;
+We create a variable b that can store exactly 1 byte
+This is the temporary storage for each byte we copy
