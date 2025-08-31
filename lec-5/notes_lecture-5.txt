@@ -34,7 +34,45 @@ typedef struct node
 - order of operations is super important here.
 - atoi (ASCII to integer): converting string to an int. "10" to 10 (an actual int)
 - prepending
-- running time of insertion (while prepending) is O(1): constant time, superfast
+- (computer can only look at one location at a time, then print it, that's why while making linked list we make that ptr(pointer) to point at one location then print it)
+
+- running time of insertion (while prepending) is O(1): constant time, superfast, constantly adding at the beginning of the list
 - running time of searching a linked list(looking for something in it): O(n) takes time
+
 - we can't use binary search algorithm on linked list
 - running time of insertion (while appending) is O(n): every time finding the end of the list and there's is n number of node
+
+31/08/2025
+- linked list basic example on list2.c (prepending)
+
+- trees
+- binary search tree (each node have 2 pointers):
+- data structure that's keep in sorted order. according to middle (called it root node) it has left sub tree < root (always), right sub tree > root (always)
+- in some case it's a recursive data structure, the root node is a composition of 2 subtree node and one more node (root node itself)
+- insertion, deletion, searching, (any operation) everything starts from the root node
+- running time O(logn)
+- recursive for BST
+- balanced tree
+
+- dictionaries: data structure that stores keys with values (like word and definitoins)
+- O(1) constant time: no matter how big the searching field is (name and number for say, 100k or 1M), it'll always take the same amount of time.
+- hashing (hash function): taking any number of input and maping it finite number of outputs
+- hash table: array of buckets (linked lists) (running time O(n), but even if collision happens, most good hash functions achieves O(1) running time )
+- Collisions: when multiple keys go to the same bucket → solved with chaining
+- return toupper(word[0] - 'A'; A ASCII value 65, if I substract the first letter from the given word from 'A', that's gonna give me a number between 0 to 25 (26 alphabet)
+- this is a hash function that only looks for the first letter of the given name (key) to find their number (value)
+- unsigned int (meaning number from 0 to positive)
+- O(n/k) running time: 
+- sometimes O(n/k) ~ O(1): here k is close to n (one bucket per word)
+- If k grows with n, average search ≈ O(1)
+- O(n/k) is much better running time than O(n)
+
+-tries (pronounced try/trie): a tree of arrays (O(1) constant time)
+- root node (a big array (26 locations))
+- hash again and again, creating one array for every letter in my word
+- shares common prefix (details on trie.png file)
+- end note (ardi, arik i is end note for ardi, common prefix ar, k is end note for arik)
+- this too is a dictionary(abstract data type, collection of key-value pairs)
+- implement dictionary with hash table (an array of linked list) or a trie
+- O(k) is same thing as O(1), searching, inserting, deleting from a trie is constant time
+- down side: all the space it takes
