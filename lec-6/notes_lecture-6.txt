@@ -1,0 +1,77 @@
+01/09/2025 (Python)
+[docs.python.org]
+- no need to compile and run, just python file.py interpreter (reads my program top to bottom, left to right)
+- python manages memory for me, so it takes more ram underneath the hood
+
+- speller, filter, face recognition (didn't learn how to code, just saw how it works)
+
+- functions:
+- from cs50 import get_string (not importing the whole function, for more efficiency)
+- fstring (format string)
+- get_string is input in python
+
+- get_float
+- get_int
+- get_string (not all that useful)
+
+- variables:
+- counter += 1; in c counter += 1 in python, but we can't use counter ++ or counter -- in python
+
+- types:
+- bool
+- float
+- int
+- str (string)
+- range
+- list
+- tuple
+- dict
+- set (a collection of things, that won't contain any duplicate)
+
+- conditionals: do this thing for this thing
+
+- compare:
+- str 
+- in python comparing two strings works but not in c (cause string is char * in c and its on different memory location)
+- in [] collection of possible values
+
+- OOP (object-oriented programming):
+- an object can not only have values/attributes inside them but also functionality buit in
+- s = input("Do you agree? ").lower()
+
+- loops:
+- on every iteration of for loop python is automatically assigning i to the next value, that's why we don't need to use it or increment it
+- if I don't care about the variable (cause I'm not gonna us it) I can use _ (underscore) in that place. it's just a valid character or a variable name
+- forever loop in py:
+- while True/False (T/F is uppercase in forever loop)
+- in py I can loop over anything that's iterable, like a string is iterable I can iterate it from left to right (so it's easier to loop in py than c)
+
+- positional parameters: Arguments matched by their order
+- named parameters: Arguments matched by their name, not order
+
+- end="" the default is always "\n" in python but if I wanna override it then I just leave it empty, meaning there won't be any new line where I add end=""
+- print() printing nothing automatically give you a line ending
+- short bits of code inside of these type of format strings like fstring
+print(f"After: {before.upper()}")
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
