@@ -19,11 +19,11 @@ that's where the term data structure comes in.
 - combining . and * = ->
 
 Linked Lists: 
-- we can certainly use the computer's memory more of a canvas, put things wheverever we want, whereever is availabe, so long as we somehow connect the dot and make our way from one chunk of memory to next to the next (linking them together)
+- we can certainly use the computer's memory more of a canvas, put things wheverever we want, whereever is availabe, so long as we somehow connect the dot and make our way from one chunk of memory to the next to the next (linking them together)
 - Using pointers
 - Node: each node has data, and a pointer (metadata) to tell you where the next node is. You follow the chain of clues until you reach the end (where the pointer is NULL (0 address)
 - *one extra pointer to find the first node*
-- metadata: we don't fundamentally care about it, but it does helps us organize my actual data
+- metadata: we don't fundamentally care about it, but it does helps us to organize my actual data
 - good template 🔻
 typedef struct node
 {
@@ -40,12 +40,12 @@ typedef struct node
 - running time of searching a linked list(looking for something in it): O(n) takes time
 
 - we can't use binary search algorithm on linked list
-- running time of insertion (while appending) is O(n): every time finding the end of the list and there's is n number of node
+- running time of insertion (while appending) is O(n): every time finding the end of the list and there's n number of node
 
 31/08/2025
 - linked list basic example on list2.c (prepending)
 
-- trees
+- trees (code on tree.c)
 - binary search tree (each node have 2 pointers):
 - data structure that's keep in sorted order. according to middle (called it root node) it has left sub tree < root (always), right sub tree > root (always)
 - in some case it's a recursive data structure, the root node is a composition of 2 subtree node and one more node (root node itself)
@@ -54,12 +54,12 @@ typedef struct node
 - recursive for BST
 - balanced tree
 
-- dictionaries: data structure that stores keys with values (like word and definitoins)
+- dictionaries: data structure that stores keys with values (like word and definitions)
 - O(1) constant time: no matter how big the searching field is (name and number for say, 100k or 1M), it'll always take the same amount of time.
-- hashing (hash function): taking any number of input and maping it finite number of outputs
+- hashing (hash function): taking any number of input and mapping it finite number of outputs
 - hash table: array of buckets (linked lists) (running time O(n), but even if collision happens, most good hash functions achieves O(1) running time )
 - Collisions: when multiple keys go to the same bucket → solved with chaining
-- return toupper(word[0] - 'A'; A ASCII value 65, if I substract the first letter from the given word from 'A', that's gonna give me a number between 0 to 25 (26 alphabet)
+- return toupper(word[0] - 'A'); A ASCII value 65, if I subtract the first letter from the given word from 'A', that's gonna give me a number between 0 to 25 (26 alphabet)
 - this is a hash function that only looks for the first letter of the given name (key) to find their number (value)
 - unsigned int (meaning number from 0 to positive)
 - O(n/k) running time: 
