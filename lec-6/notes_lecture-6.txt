@@ -53,25 +53,35 @@
 - print() printing nothing automatically give you a line ending
 - short bits of code inside of these type of format strings like fstring
 print(f"After: {before.upper()}")
-- 
+
+02/09/2025
+- def main():
+- it's not required in python to have a main function but it's conventional to have a main function, I have to call the function myself at the last after executing all the code
+
+- truncation: chopping off extra digits (no rounding)
+- python's a little smarter when it comes to converting one value to another
+- int / int output: float
+- floating point imprecision: Computers store decimal numbers in binary (base-2), so some decimals can’t be represented exactly. 
+
+- integer overflow: this problem doesn't exist in python, when we give it int for say, it'll grow and grow and python will reserve more and more memory for that integer to fit
+
+- exceptions: better way to handle error
+- try / except (details in exceptions.py)
 
 
+- in C we used do while loop to prompt the user to do something again and again, but do while loop doesn't exist in python, so we use while True: to do it forever just like do while wokrs
 
+- lists (just a datatype in python for me): list's memory automatically handed by python (I don't have to know about nodes, pointers or implement linked list myself)
+- len 
+- sum
+- (read lists documentations in python)
+- for loops can have an else clause in python
 
+- dictionaries: key with value (good use when associating something with something else)
+- dict (phonebook/phonebook2.py for example, but also it has so many creative usage)
 
+- sys (system related functionality):
+- when we type python greet.py Ardi (the command python is ignored while counting argv[])
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- pip (pip install packages): package manager for python
+- we use it to install, upgrade, and manage external libraries that are not part of Python’s standard library
