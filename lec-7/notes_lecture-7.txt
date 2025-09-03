@@ -1,0 +1,33 @@
+03/09/2025 (Artificial Intelligent)
+- image generation
+- ChatGpt
+- prompt engineering
+- system prompt (already handed in the ai system that how the ai chat should behave, just like cs50 duck, it doesn't give me full answer, just a hint to the answer)
+- user prompt
+
+- generative ai: ai generating different like images video and sort mimicking human behavior
+- adapting patterns
+
+- decision trees: 
+- A decision tree is just a way for computers (and humans) to make step-by-step choices using questions and answers, like a flowchart
+- The computer looks at training data and automatically figures out which questions to ask at each step
+- why ai is good at games
+
+- minimax: Minimax is an algorithm that lets a computer play games “perfectly” by assuming the opponent is also playing perfectly (Used in Tic-Tac-Toe, Chess, Checkers, Connect Four, etc)
+
+- machine learning: is a subset of ai that tries instead to get machines to learn what they should do without being so coached step by step by human's here
+- reinforcement learning: you sort of wait for the machine (computer or robot etc.) to get better and as it gets better you reward with reward function
+- explore v exploit:
+If you only exploit, you might miss better strategies
+If you only explore, you waste time and rewards
+Balancing the two is what makes learning effective
+
+- deep learning: Deep Learning is a type of AI that uses multi-layered neural networks to automatically learn patterns from data — powering things like self-driving cars, chatbots, and image recognition
+- neural networks: takes input, applies weights, gives output.
+
+- large language models (LLM): a huge AI model trained on text, used for generating/understanding language
+- transformer architecture: The special neural network design (with attention) that makes LLMs powerful
+- embeddings: a way of turning information (like words, sentences, or even images) into a list of numbers (a vector) that captures meaning
+embedding("king") – embedding("man") + embedding("woman") ≈ embedding("queen")
+
+- hallucination: sometimes ai like ChatGpt makes mistakes and it's so confident about it and when we say you're wrong, it apologizes too, but it did made up sone stuff (it's gonna be less frequent in future)
