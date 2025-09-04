@@ -1,0 +1,52 @@
+04/09/2025
+- SQL (Structured Query Language)
+- flat file database (.csv (coma separated values), txt)
+- Flat file = like Excel/CSV, simple but limited.
+- SQL database = relational, powerful, scalable, secure.
+
+- favoriotes.py:
+- when we open file using with open function, there's no need to close the file, it'll be closed automatically
+- next(reader) the header row will be skipped (csv.reader used here)
+- but when we use csv.DictReader, every row becomes a dictionary being the value and the key for that Dict is the header file
+- counts = {} / counts = dict() [empty dict]
+- sorted(counts) - by default sort by key
+- when I make a dictionary then I can use all the functions that comes with dictionary in python
+- from collection import Counter (here Counter has the counting capabilities build in)
+- counts.most_common() also a dict function and it returns with pair of key-value
+- for fav, count in counts.most_common(): pair of fav count fav count
+
+- Relational Database:
+- SQL (SQL follows this CRUD paradigms which means in a relational database you can only do 4 things)
+
+CREATE, INSERT
+READ (SELECT use it more)
+UPDATE
+DELETE, DROP
+(these above commands only apply on filename.db type files)
+
+- lite version of sql
+- sqlite3 (sqlite3 FILE creates a binary file)
+- .schema - shows you the structure (blueprint) of the database. In other words, it prints the SQL commands that were used to create the tables, indexes, and other objects in that database
+- SELECT columns FROM tables
+- SELECT * FROM favorites - Show me all rows and all columns from the table called favorites inside the database favorites.db
+- * (star sign) means all columns
+- ascii art used in this command
+
+- AVG
+- COUNT
+- DISTINCT
+- LOWER
+- MAX
+- MIN
+- UPPER
+(all of these functionality in sql)
+- WHERE
+- LIKE
+- ORDER BY
+- LIMIT
+- GROUP BY
+
+- adding data to new database
+- INSERT INTO database_name (column_name, column_name) VALUES(values for those 2 columns selected)
+- DELETE FROM database_name (this'll delete the full database) WHERE column_name NULL; (just for an example where in that column there is a NULL value I wanna delete the whole row)
+- UPDATE table SET column = value WHERE condition; (Updating the database, saying which column to update and what values to enter as an updated data)
