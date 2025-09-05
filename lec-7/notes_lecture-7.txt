@@ -50,3 +50,71 @@ DELETE, DROP
 - INSERT INTO database_name (column_name, column_name) VALUES(values for those 2 columns selected)
 - DELETE FROM database_name (this'll delete the full database) WHERE column_name NULL; (just for an example where in that column there is a NULL value I wanna delete the whole row)
 - UPDATE table SET column = value WHERE condition; (Updating the database, saying which column to update and what values to enter as an updated data)
+
+05/09/2025
+- IMBb (Internet Movie Database)
+- schema
+- tsv (tab separated values, which the same thing when we look for tab character instead of comas(csv))
+
+- one-to-one relationship data: each row in one table matches with only one row in another table
+
+- data types:
+- BLOB (binary large object)
+- INTEGER
+- NUMERIC
+- REAL (real numbers aka float, decimal points in them)
+- TEXT
+- other keywords:
+- NOT NULL (while designing a database I can specify that this column can't be NULL with it)
+- UNIQUE (must be unique, avoid duplicate)
+
+- Primary Key = unique ID in its own table
+- Foreign Key = points to a primary key in another table
+
+- querying
+- nested querying
+- for example:
+
+SELECT * FROM shows WHERE id IN (SELECT show_id FROM ratings WHERE rating >= 6.0 LIMIT 10); - this's is gonna do the work inside the parenthesis first then do the outside. with this cmd I'm getting show name with show id that has the rating of 6 or over
+
+- JOIN keyword: for joining two tables in database
+- for example:
+SELECT * FROM shows JOIN ratings ON shows.id = ratings.show_id WHERE rating >= 6.0 LIMIT 10;
+
+- one-to-many relationship: (IMDb also supports)
+- for example there is some movies or shows that has more than one genre.
+SELECT * FROM shows JOIN genres ON shows.id = genres.show_id WHE
+RE genre = 'Comedy' LIMIT 10;
+SELECT title, year, genre FROM shows JOIN genres ON shows.id = genres.show_id WHERE genre = 'Comedy' LIMIT 10;
+
+- when we join data with a one-to-many relationship we're gonna get  temporary duplicates
+
+- many-to-many relationship:
+- middle (junction) table: bridge the two
+- for example:
+SELECT person_id FROM stars WHERE show_id = (SELECT id FROM show
+s WHERE title = 'The Office' AND year = 2005);
+
+SELECT title FROM shows WHERE id IN (SELECT show_id FROM stars W
+HERE person_id = (SELECT id FROM people WHERE name = 'Steve Carell'));
+
+- indexes: a data structures that makes it faster to perform queries (like SELECT) 
+- CREATE INDEX name ON table (column, ....); (on specific table on specific column)
+- saves much much more times
+- without creating index when we perform searching (as I did above in vs code) it does linear search underneath the hood (that takes more time)
+- B-trees (when we create index):
+- primary keys are automatically indexed
+- so, why not index every column and every table?
+- when we create index we're trading lots of space to save some time
+
+- python and SQL
+- from cs50 import SQL
+- sql is best for reading data from databases and python is best creating a user interface or a web app
+
+- race conditions: when we have lots of data, and handling those data lots of server this happens
+- when server is racing to handle one user and other user's requests are happening at the same time
+- BEGIN TRANSACTION
+- COMMIT
+- ROLLBACK
+
+- SQL injection attack
