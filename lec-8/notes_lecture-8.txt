@@ -1,0 +1,100 @@
+HTML, CSS, JavaScript
+- The Internet
+- router: computers/servers, that routes information from left to bottom top to right, geographically, to get data from one point to another. many different sever between two points
+
+- IP (Internet Protocol) #.#.#.# uniquely represents computers
+- standardizes how the addresses work
+- each numbers from 0 to 255
+- ipv4 / ipv6
+- computers/devices on the internet minimally provides a source address and a destination address
+
+- TCP (Transmission Control Protocol)
+- ip alone is not enough to guarantee delivery
+- is the pair of protocols that the internet usages to get data from source to destination
+- Ensures reliable delivery of data by having a sequence number (32 bits) and port number from the sender
+- also help the server do more than one thing, helps them multiplex among email, web, video conferencing by using port numbers
+- ports (port number) this program will open the sender's data for the receiver
+- 80 HTTP
+- 443 HTTPS
+- 1.2.3.4:80 (destination address:port number, when making request on a web)
+
+- DNS (Domain Name System Servers)
+- everywhere 
+- DNS translates domain names into IP addresses, so we don’t have to remember numbers
+- You type www.google.com → DNS finds its IP address → your browser connects to Google’s server
+- inside of a DNS server Doman name, IP address (also other different parts)
+- Fully Qualified Doman name
+google.com → not full (just a domain)
+
+www.google.com. → FQDN (notice it includes everything: www = host, google = domain, .com = top-level domain, and even the hidden . at the end = root)
+
+- my phone/laptop generally asks the local dns server which is owned by the internet service provider, if one server doesn't know then it's gonna ask someone bigger, recursively
+- There are finite numbers of root servers in the world
+
+- DHCP (Dynamic Host Configuration Protocol)
+- a service that automatically gives devices an IP address when they join a network
+
+- HTTP ,rule for how web browsers and web servers talk to each other
+- not secure (data is plain text)
+
+- HTTPS, secure version (uses encryption with SSL/TLS, scrambled using very fancy mathematics)
+
+- https://www.example.com/ the last '/' means default page for the webpage
+
+- POST (sending info)
+- GET (getting info)
+(other website might be hosted on this server, this packet down is for the server to know what info do I want when I make a request)
+
+GET / HTTP/2 (meaning the version of http)
+Host: www.harvard,edu (http header) (key: value pairs here)
+... (other http headers)
+
+- this part down is what comes out of the server
+
+HTTP/2 200 (status code)
+Content-Type text/html (the type of content)
+...
+
+- curl (connect to url)
+
+- inspect (developer tool)
+- HTTP/2 301 → Redirect
+Means, This page has permanently moved to a new address, go there instead.
+- HTTP/2 404 (file not found)
+
+- all most known status code pic saved in lec-8 file
+
+- GET / HTTP/1.1
+Host: safetyschool.org
+...
+
+- HTML (markup) (text based language)
+- just about presenting info
+mainly 2 concepts
+- tags
+- attributes (anything after the name of a tag, like: <html lang="eng"> here lang is an attribute, eng as values, key="value" pairs)
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
