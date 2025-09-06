@@ -97,13 +97,19 @@ s WHERE title = 'The Office' AND year = 2005);
 
 SELECT title FROM shows WHERE id IN (SELECT show_id FROM stars W
 HERE person_id = (SELECT id FROM people WHERE name = 'Steve Carell'));
+- IN allows multiple matches — so you get a list of names
+
+SELECT title FROM shows, stars, people
+   ...> WHERE shows.id = stars.show_id
+   ...> AND stars.person_id = people.id
+   ...> AND name = 'Steve Carell';
 
 - indexes: a data structures that makes it faster to perform queries (like SELECT) 
 - CREATE INDEX name ON table (column, ....); (on specific table on specific column)
 - saves much much more times
 - without creating index when we perform searching (as I did above in vs code) it does linear search underneath the hood (that takes more time)
-- B-trees (when we create index):
-- primary keys are automatically indexed
+- B-trees (when we create index): the sorter the tree is the more less time it'll take to give the output
+- primary keys are automatically indexed, foreign keys aren't
 - so, why not index every column and every table?
 - when we create index we're trading lots of space to save some time
 
@@ -111,10 +117,13 @@ HERE person_id = (SELECT id FROM people WHERE name = 'Steve Carell'));
 - from cs50 import SQL
 - sql is best for reading data from databases and python is best creating a user interface or a web app
 
-- race conditions: when we have lots of data, and handling those data lots of server this happens
+- race conditions: when we have lots of data, and handling those data lots of server this happens. A race condition happens when two users/programs try to change the same data at the same time
 - when server is racing to handle one user and other user's requests are happening at the same time
 - BEGIN TRANSACTION
 - COMMIT
 - ROLLBACK
+- Locking rows/tables temporarily → so only one transaction can edit them at a time
+- Ensuring atomicity → either all changes succeed (COMMIT) or none (ROLLBACK)
+- Keeping data consistent → no half-finished updates leak out
 
 - SQL injection attack
