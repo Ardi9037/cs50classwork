@@ -73,28 +73,52 @@ Host: safetyschool.org
 mainly 2 concepts
 - tags
 - attributes (anything after the name of a tag, like: <html lang="eng"> here lang is an attribute, eng as values, key="value" pairs)
-- 
+- <a href=""></a> anchor, hyper reference (needs website with protocol like http or https)
+- video
 
+- meta data:
+<meta name="viewport" content="initial-scale=1", width=device-width">
+(to make the web mobile or any device friendly)
+- copy pasting this part is pretty common
 
+- form tag
+- https://www.example.com/path?key=value
+- https://www.example.com/path?key=value&key=value (2 key value attached with ampersand)
+- q = query (Google’s parameter for searches)
 
+- regex (regular expression)
+- special pattern used to search, match, or replace text
+- this is not generally the best technique for validating user input and protecting against invalid user input
+- coz client can't be trusted (the defense can be changed using inspect, developer tool)
 
+. any single character (except line terminators)
+* zero or more times
++ one or more times
+? 0 or 1 time
+{n} n occurrences
+{n, m} at least n occurrences, at most m occurrences
 
+- character classes:
+[0123456789] any one of the enclosed characters
+[0-9]        any one of the range of characters
+\d           any digits
+\D           any character that's not a digit
 
+- validator.w3.org
 
+- CSS (cascading style sheet) (key: value)
+- properties (key: value pairs)
+- selector (type, class, ID, attribute)
+- html entity
+- header, main, footer
+- Bootstrap (a popular frame work or library)
 
+- JavaScript (language)
+- inside script tag
+- #something this refers to id of a tag, same in css & JavaScript
+- DOM (Document Object Model)
+- DOMCOntentLoader: Run this JavaScript code once the HTML structure is ready to be used
+- let variable_name (to create a variable)
+- JavaScrept Events (javascript_event): events that webpages and mobile apps can listen for
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Geolocation (practice this from src github)
