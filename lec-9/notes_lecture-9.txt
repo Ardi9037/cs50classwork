@@ -1,0 +1,78 @@
+Flask (web framework for python)
+- microframework 
+- http-server (non standard ports || static contents - website)
+- web application (take input and produced output)
+- domain/route?key=value&key=value (rout - tells Flask which function to run)
+- flask run (starting web server (dynamic website))
+
+app.py
+requirements.txt
+static/ (images, css)
+templates/ (actual html, css, javascript)
+
+- __name__ refers  to the current filename in python
+
+- request.args 
+- get function (if there is no such key, output will be a default value)
+- jinja (framework):
+Flask = logic, Jinja = HTML with Python-like placeholders for dynamic pages
+
+- Forms
+- Templates
+- Request Methods
+- get, post
+GET sends data in the URL (visible, limited size, used for search/query), while POST sends data in the request body (hidden, larger, used for forms/login)
+
+- request.form.get (to use post instead of get)
+
+- Frosh IMs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
