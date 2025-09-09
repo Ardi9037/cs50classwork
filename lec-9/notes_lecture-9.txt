@@ -27,52 +27,28 @@ GET sends data in the URL (visible, limited size, used for search/query), while 
 
 - Frosh IMs
 
+- @app.route("/", methods=["", ""]
+- <form action="/register" method="post">
 
+- request.form.getlist (when using checkbox)
 
+- SQLite & Python
+- jinja doc online
 
+- MVC (Model View Controller)
+Model (database/global dict.) <-> Controller (all the logics in app.py) <-> View (what the user see)
 
+- cookies & sessions
+- a feature of http, they're how servers implement state between themselves and the user
+- Cookies = data saved in browser, Sessions = server-side memory of a user (often tracked by a cookie)
 
+- shopping cart
+- (?) to put list
 
+- shows
+- AJAX (makes request for auto complete, every time the user types)
+- fetch (makes http request to the server)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- APIs (application programming interface)
+-  getting data from someone else's server or service into your application
+- JSON (javascript object notation)
