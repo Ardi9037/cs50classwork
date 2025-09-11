@@ -1,0 +1,44 @@
+Cybersecurity
+- Install Command line tool
+- Learning git (version control software)
+- Use main vs code app
+- Host a website (GitHub or netify)
+- Host a web app (pic on folder)
+
+- passwords
+- brute-force attacks
+- password managers
+- two factor authentication
+- otp
+
+- hashing (well designed website uses)
+- password stuffing
+- storing cryptic values instead of username and password on the database
+- the server never saves the password but it does use the hash function to compare those same hash values again and again whenever the user logs in
+- rainbow table (password - hash)
+
+- salting: A random, unique value (salt) is generated for each user and combined with their password before hashing
+- Duplicate passwords look unique in the database.
+- Precomputed rainbow tables become useless
+
+- cryptography
+- symmetric cryptography (secret key)
+- asymmetric cryptography (doesn't require that the user and the server uses the same secret key):
+- aka public key cryptography
+- Public key locks, private key unlocks (for encryption) — and the reverse for signatures
+- HTTPS uses public key cryptography
+
+- passkeys
+
+- end-to-end encryption
+Messages are encrypted on the sender’s device with the recipient’s public key
+
+Servers just forward encrypted blobs, but it looks like gibberish to anyone in the middle
+
+Only the recipient’s private key can decrypt it
+
+- deletion
+- secure deletion
+- full-disk encryption
+
+- ransomware
