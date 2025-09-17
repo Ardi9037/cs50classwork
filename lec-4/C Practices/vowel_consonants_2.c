@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    string word = get_string("Word: ");
+    char *word = get_string("Word: ");
     char vowels_list[5] = {'a', 'e', 'i', 'o', 'u'};
 
     int vowels = 0, consonants = 0;
