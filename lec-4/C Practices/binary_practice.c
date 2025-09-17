@@ -7,7 +7,7 @@ int main(void)
     int numbers[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int start = 0, end = 9;
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++) // while(start <= end) works too
     {
         int mid = (start + end) / 2;
         if (numbers[mid] == n)
