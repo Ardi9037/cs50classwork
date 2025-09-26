@@ -14,6 +14,8 @@
 - get_int
 - get_string (not all that useful)
 
+when I have the same function as cs50 I can specify them with cs50.get_int() like this
+
 - variables:
 - counter += 1; in c counter += 1 in python, but we can't use counter ++ or counter -- in python
 
@@ -33,15 +35,17 @@
 - compare:
 - str 
 - in python comparing two strings works but not in c (cause string is char * in c and its on different memory location)
+
 - in [] collection of possible values
 
 - OOP (object-oriented programming):
-- an object can not only have values/attributes inside them but also functionality buit in
+- an object can not only have values/attributes inside them but also functionality built in
 - s = input("Do you agree? ").lower()
 
 - loops:
 - on every iteration of for loop python is automatically assigning i to the next value, that's why we don't need to use it or increment it
 - if I don't care about the variable (cause I'm not gonna us it) I can use _ (underscore) in that place. it's just a valid character or a variable name
+
 - forever loop in py:
 - while True/False (T/F is uppercase in forever loop)
 - in py I can loop over anything that's iterable, like a string is iterable I can iterate it from left to right (so it's easier to loop in py than c)
@@ -60,7 +64,7 @@ print(f"After: {before.upper()}")
 
 - truncation: chopping off extra digits (no rounding)
 - python's a little smarter when it comes to converting one value to another
-- int / int output: float
+- int / int , output: float
 - floating point imprecision: Computers store decimal numbers in binary (base-2), so some decimals can’t be represented exactly. 
 
 - integer overflow: this problem doesn't exist in python, when we give it int for say, it'll grow and grow and python will reserve more and more memory for that integer to fit
@@ -69,19 +73,20 @@ print(f"After: {before.upper()}")
 - try / except (details in exceptions.py)
 
 
-- in C we used do while loop to prompt the user to do something again and again, but do while loop doesn't exist in python, so we use while True: to do it forever just like do while wokrs
+- in C we used do while loop to prompt the user to do something again and again, but do while loop doesn't exist in python, so we use while True: to do it forever just like do while works
 
-- lists (just a datatype in python for me): list's memory automatically handed by python (I don't have to know about nodes, pointers or implement linked list myself)
+- lists (just a datatype in python for me): list's memory automatically handled by python (I don't have to know about nodes, pointers or implement linked list myself)
 - len 
 - sum
 - (read lists documentations in python)
-- for loops can have an else clause in python
+- for loops can have an 'else' clause in python
 
 - dictionaries: key with value (good use when associating something with something else)
 - dict (phonebook/phonebook2.py for example, but also it has so many creative usage)
 
-- sys (system related functionality):
-- when we type python greet.py Ardi (the command python is ignored while counting argv[])
+- sys: system related functionality
+
+- when we type python greet.py Ardi (the command 'python' is ignored while counting argv[])
 
 - pip (pip install packages): package manager for python
 - we use it to install, upgrade, and manage external libraries that are not part of Python’s standard library
