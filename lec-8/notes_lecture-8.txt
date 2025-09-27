@@ -13,6 +13,7 @@ HTML, CSS, JavaScript
 - is the pair of protocols that the internet usages to get data from source to destination
 - Ensures reliable delivery of data by having a sequence number (32 bits) and port number from the sender
 - also help the server do more than one thing, helps them multiplex among email, web, video conferencing by using port numbers
+
 - ports (port number) this program will open the sender's data for the receiver
 - 80 HTTP
 - 443 HTTPS
@@ -22,13 +23,13 @@ HTML, CSS, JavaScript
 - everywhere 
 - DNS translates domain names into IP addresses, so we don’t have to remember numbers
 - You type www.google.com → DNS finds its IP address → your browser connects to Google’s server
-- inside of a DNS server Doman name, IP address (also other different parts)
-- Fully Qualified Doman name
+- inside of a DNS server Domain name, IP address (also other different parts)
+- Fully Qualified Domain name
 google.com → not full (just a domain)
 
 www.google.com. → FQDN (notice it includes everything: www = host, google = domain, .com = top-level domain, and even the hidden . at the end = root)
 
-- my phone/laptop generally asks the local dns server which is owned by the internet service provider, if one server doesn't know then it's gonna ask someone bigger, recursively
+- my phone/laptop generally asks the local DNS server which is owned by the internet service provider, if one server doesn't know then it's gonna ask someone bigger, recursively
 - There are finite numbers of root servers in the world
 
 - DHCP (Dynamic Host Configuration Protocol)
@@ -46,7 +47,7 @@ www.google.com. → FQDN (notice it includes everything: www = host, google = do
 (other website might be hosted on this server, this packet down is for the server to know what info do I want when I make a request)
 
 GET / HTTP/2 (meaning the version of http)
-Host: www.harvard,edu (http header) (key: value pairs here)
+Host: www.harvard.edu (http header) (key: value pairs here)
 ... (other http headers)
 
 - this part down is what comes out of the server
@@ -74,7 +75,10 @@ mainly 2 concepts
 - tags
 - attributes (anything after the name of a tag, like: <html lang="eng"> here lang is an attribute, eng as values, key="value" pairs)
 - <a href=""></a> anchor, hyper reference (needs website with protocol like http or https)
-- video
+- video:
+<video controls mutes>
+     <source src="video.mp4" type="video/mp4">
+</video>
 
 - meta data:
 <meta name="viewport" content="initial-scale=1", width=device-width">
@@ -86,17 +90,17 @@ mainly 2 concepts
 - https://www.example.com/path?key=value&key=value (2 key value attached with ampersand)
 - q = query (Google’s parameter for searches)
 
-- regex (regular expression)
+- regular expression (regex)
 - special pattern used to search, match, or replace text
 - this is not generally the best technique for validating user input and protecting against invalid user input
-- coz client can't be trusted (the defense can be changed using inspect, developer tool)
+- coz client(browser) can't be trusted (the defense can be changed using inspect, developer tool)
 
 . any single character (except line terminators)
 * zero or more times
 + one or more times
 ? 0 or 1 time
-{n} n occurrences
-{n, m} at least n occurrences, at most m occurrences
+{n} n occurrences (one number)
+{n, m} at least n occurrences, at most m occurrences (two numbers)
 
 - character classes:
 [0123456789] any one of the enclosed characters
@@ -104,20 +108,24 @@ mainly 2 concepts
 \d           any digits
 \D           any character that's not a digit
 
-- validator.w3.org
+- validator.w3.org (standardizes html language): to check if any error in my code
 
 - CSS (cascading style sheet) (key: value)
 - properties (key: value pairs)
-- selector (type, class, ID, attribute)
+- selector (type, class, ID, attribute):
+type(name of the tag)
+class(.)
+id(#)
+
 - html entity
 - header, main, footer
-- Bootstrap (a popular frame work or library)
+- Bootstrap (a popular third party frame work or library)
 
 - JavaScript (language)
 - inside script tag
 - #something this refers to id of a tag, same in css & JavaScript
 - DOM (Document Object Model)
-- DOMCOntentLoader: Run this JavaScript code once the HTML structure is ready to be used
+- DOMContentLoaded: Run this JavaScript code once the HTML structure is ready to be used
 - let variable_name (to create a variable)
 - JavaScrept Events (javascript_event): events that webpages and mobile apps can listen for
 
