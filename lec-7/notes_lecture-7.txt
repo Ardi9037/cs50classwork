@@ -5,7 +5,7 @@
 - SQL database = relational, powerful, scalable, secure.
 
 - favoriotes.py:
-- when we open file using with open function, there's no need to close the file, it'll be closed automatically
+- when we open file using 'with open' function, there's no need to close the file, it'll be closed automatically
 - next(reader) the header row will be skipped (csv.reader used here)
 - but when we use csv.DictReader, every row becomes a dictionary being the value and the key for that Dict is the header file
 - counts = {} / counts = dict() [empty dict]
@@ -13,7 +13,13 @@
 - when I make a dictionary then I can use all the functions that comes with dictionary in python
 - from collection import Counter (here Counter has the counting capabilities build in)
 - counts.most_common() also a dict function and it returns with pair of key-value
+
+- counts.most_common(3) for top 3 result (by value)
+
 - for fav, count in counts.most_common(): pair of fav count fav count
+
+- read Counter() doc
+
 
 - Relational Database:
 - SQL (SQL follows this CRUD paradigms which means in a relational database you can only do 4 things)
@@ -27,6 +33,7 @@ DELETE, DROP
 - lite version of sql
 - sqlite3 (sqlite3 FILE creates a binary file)
 - .schema - shows you the structure (blueprint) of the database. In other words, it prints the SQL commands that were used to create the tables, indexes, and other objects in that database
+
 - SELECT columns FROM tables
 - SELECT * FROM favorites - Show me all rows and all columns from the table called favorites inside the database favorites.db
 - * (star sign) means all columns
@@ -42,13 +49,16 @@ DELETE, DROP
 (all of these functionality in sql)
 - WHERE
 - LIKE
-- ORDER BY
+- ORDER BY (default: ASC || DESC)
 - LIMIT
 - GROUP BY
+- JOIN (like shows.db)
 
 - adding data to new database
 - INSERT INTO database_name (column_name, column_name) VALUES(values for those 2 columns selected)
+
 - DELETE FROM database_name (this'll delete the full database) WHERE column_name NULL; (just for an example where in that column there is a NULL value I wanna delete the whole row)
+
 - UPDATE table SET column = value WHERE condition; (Updating the database, saying which column to update and what values to enter as an updated data)
 
 05/09/2025
@@ -59,6 +69,7 @@ DELETE, DROP
 - one-to-one relationship data: each row in one table matches with only one row in another table
 
 - data types:
+
 - BLOB (binary large object)
 - INTEGER
 - NUMERIC
@@ -87,16 +98,19 @@ SELECT * FROM shows JOIN genres ON shows.id = genres.show_id WHE
 RE genre = 'Comedy' LIMIT 10;
 SELECT title, year, genre FROM shows JOIN genres ON shows.id = genres.show_id WHERE genre = 'Comedy' LIMIT 10;
 
-- when we join data with a one-to-many relationship we're gonna get  temporary duplicates
+- when we join data with a one-to-many relationship we're gonna get temporary duplicates
+
 
 - many-to-many relationship:
 - middle (junction) table: bridge the two
+
 - for example:
-SELECT person_id FROM stars WHERE show_id = (SELECT id FROM show
+SELECT person_id FROM stars WHERE show_id = (SELECT id FROM shows
 s WHERE title = 'The Office' AND year = 2005);
 
 SELECT title FROM shows WHERE id IN (SELECT show_id FROM stars W
 HERE person_id = (SELECT id FROM people WHERE name = 'Steve Carell'));
+
 - IN allows multiple matches — so you get a list of names
 
 SELECT title FROM shows, stars, people
@@ -105,9 +119,12 @@ SELECT title FROM shows, stars, people
    ...> AND name = 'Steve Carell';
 
 - indexes: a data structures that makes it faster to perform queries (like SELECT) 
+
 - CREATE INDEX name ON table (column, ....); (on specific table on specific column)
+
 - saves much much more times
 - without creating index when we perform searching (as I did above in vs code) it does linear search underneath the hood (that takes more time)
+
 - B-trees (when we create index): the sorter the tree is the more less time it'll take to give the output
 - primary keys are automatically indexed, foreign keys aren't
 - so, why not index every column and every table?
